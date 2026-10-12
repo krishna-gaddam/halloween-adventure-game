@@ -88,7 +88,7 @@
                 <p>⬆️ <b>Jump:</b> Up Arrow Key</p>
                 <p>✨ <b>Magic:</b> Spacebar (Use on Witch!)</p>
             </div>
-            <button id="startBtn" class="kid-btn text-purple-900 font-bold text-4xl px-12 py-5 rounded-full uppercase tracking-wider cursor-pointer hover:scale-105">Play Game!</button>
+            <div class="kid-btn text-purple-900 font-bold text-4xl px-12 py-5 rounded-full uppercase tracking-wider inline-block">Press ENTER to Play!</div>
         </div>
     </div>
 
@@ -97,7 +97,7 @@
         <div class="bg-blue-600 bg-opacity-95 border-8 border-yellow-400 rounded-3xl p-10 max-w-lg text-center shadow-2xl float-anim mt-20">
             <h1 class="text-7xl text-yellow-300 mb-4 drop-shadow-lg" style="-webkit-text-stroke: 3px #fff;">YOU WON!</h1>
             <p class="text-3xl text-white mb-8 font-bold">The Princess defeated the Witch!</p>
-            <button id="playAgainBtn" class="kid-btn text-blue-900 font-bold text-4xl px-12 py-5 rounded-full uppercase tracking-wider cursor-pointer hover:scale-105">Play Again</button>
+            <div class="kid-btn text-blue-900 font-bold text-4xl px-12 py-5 rounded-full uppercase tracking-wider inline-block">Press ENTER to Play Again</div>
         </div>
     </div>
 
@@ -626,6 +626,13 @@
                     shootMagic();
                 }
             }
+
+            // Start or Restart the game using Enter key
+            if (e.code === 'Enter') {
+                if (state === 'MENU' || state === 'WIN') {
+                    initGame();
+                }
+            }
         });
 
         window.addEventListener('keyup', (e) => {
@@ -633,10 +640,6 @@
                 keys[e.code] = false;
             }
         });
-
-        // UI Buttons
-        document.getElementById('startBtn').addEventListener('click', initGame);
-        document.getElementById('playAgainBtn').addEventListener('click', initGame);
 
         // Initial setup render
         resizeCanvas();
