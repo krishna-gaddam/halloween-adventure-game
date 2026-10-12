@@ -44,8 +44,7 @@ Because this game is incredibly lightweight, you have a few easy ways to play it
 
 Option 1: Play Online (GitHub Pages)
 
-(Note to developer: Once you upload this to GitHub and turn on Pages, put your link here!)
-Play the game right now in your browser: Play Halloween Adventure!
+**[🎮 CLICK HERE TO PLAY THE GAME! 🎮](https://krishna-gaddam.github.io/halloween-adventure-game/)**
 
 Option 2: Play Locally on your Computer
 
