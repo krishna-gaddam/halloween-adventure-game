@@ -28,6 +28,8 @@ With slow, forgiving movement and a big floaty jump, kids have plenty of time to
 
 Use the keyboard to guide the Princess to the end of the mansion!
 
+Use Enter to Start or Restart the game
+
 ➡️ Move Right: Right Arrow Key
 
 ⬅️ Move Left: Left Arrow Key
